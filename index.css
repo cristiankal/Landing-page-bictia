@@ -1,0 +1,311 @@
+body {
+    box-sizing: border-box;
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+/* Estilos para pantallas con un ancho máximo de 768 píxeles */
+@media (max-width: 768px) {
+  body {
+    background-color: #78B523;
+  }
+  .titulo-presentacion h2 {
+    font-size: 36px;
+  } 
+
+}
+
+
+.menu-principal > menu, ul, li,a {
+    font-family: sans-serif;
+    justify-content: flex-end;
+    list-style: none;
+    text-decoration: none;
+    display:flex;
+    padding:3px 20px;
+    color: #464646;
+}
+
+@media (max-width: 768px) {
+  .menu-principal > menu, ul, li, a {
+    justify-content: center;
+  }
+}
+  
+a:hover{
+  color:#78B523;
+
+}
+
+.icono {
+
+    display: flex;
+    align-items: center;
+  justify-content: flex-start;
+  padding-left: 50px;
+  padding-right: 5px;
+  }
+
+  .icono img{
+    max-width: 50px;
+  }
+
+
+  /*contenedor de imagen*/
+
+  .contenedor-imagen {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 56.25%; /* Proporción de aspecto para mantener la relación de aspecto de la imagen */
+  }
+  
+  .contenedor-imagen img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .texto-superpuesto {
+    font-family: roboto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+  }
+  
+  .texto-superpuesto h1 {
+    font-size: 50px;
+    margin-bottom: 1rem;
+  }
+  
+  .texto-superpuesto p {
+    font-size:25px;
+  }
+
+
+    /*info ingeamco*/
+
+    .ingeamco-info{
+      width: 100%;
+    display: flex;
+    flex-direction: row;
+    }
+
+    .IMAGEN-PROYECTO{
+      width: 100%;
+      max-width: 368px;
+      order: 2;
+      margin-left: 75PX;
+    }
+
+    .mision{
+      font-family:Georgia;
+      padding-left: 95px ;
+      padding-top: 50px;
+    max-width: 500px;
+    order: 1;
+    margin: 10px;
+    }
+
+
+    .mision h1{
+      font-size: 50px;
+    }
+
+    .mision p{
+      font-size:20px ;
+    }
+
+
+    
+
+  
+
+
+
+
+
+    .sostenible{
+      display: flex;
+      font-size: 50px;
+      justify-content: center;
+    }
+
+    .galeria {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+
+    }
+    
+    .imagen {
+      flex: 1;
+      margin: 50px;
+      width: 500px;
+    }
+
+    .imagen img {
+      width: 100%;
+      height: auto;
+    }
+
+
+
+
+
+
+
+
+  /*contenedor */
+ 
+
+  .servicios{
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  
+  .contenedor{
+    display: flex;
+    justify-content: center;
+  }
+
+  .caja{
+    width: 176px;
+  height: 174px;
+  padding: 20px;
+  gap: 8px;
+  background: #FFFFFF;
+  margin: 5px ;
+  }
+
+
+  /*seccion galeria*/
+  
+
+  .galeria {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .galeria img {
+    width: 300px;
+    height: 200px;
+    margin: 10px;
+  }
+  
+  .proyectos {
+  
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+
+  }
+
+
+  /*video*/
+
+  
+
+
+  /*seccion Contacto*/
+
+.contenedor__contacto{/*contenedor contacto*/
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    
+
+}
+
+.imagen-contacto  img{
+    max-width: 344px;
+    max-height: 793px;
+    margin-top: 120px;
+    margin-left:140px ;
+    margin-right: 5px;
+
+}
+
+.formcontato__text{ /*contenedor del texto */
+    
+ margin-top: 120px;
+ margin-left: 10px;
+}
+
+.formcontato__text h2{
+font-weight: 700;
+font-size: 32px;
+line-height: 38px;
+}
+
+.formcontato__text h3{
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+}
+
+.formcontato__form input{/*contenedor de los input del formulario */
+ margin-bottom: 15px;
+ border: none;
+ border-radius: 6px;
+
+}
+
+.formcontato__input{ /*le doy tamaño a los input */
+    width: 500px;
+    height: 56px;
+    padding: 15px;
+}
+
+
+.formcontato__textarea{ /*le doy tamaño al textarea*/
+    margin-bottom: 15px;
+    width: 656px;
+    height: 133px;
+    border: none;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.boton-contacto{
+    background-color: #84D904;
+    color: white;/* Color del texo */
+    border: 2px solid #0099CC;/* Grosor del borde, estilo de línea y color */
+
+border-radius: 6px;/* Añadir esquinas curvadas */
+
+width: 144px;
+height: 51px;
+margin-bottom: 30px;
+}
+
+
+.boton-contacto:hover{
+    background: transparent;
+    color:#0099CC;
+}
+
+
+/*footer*/
+
+.footer__rodape{
+ display: flex;
+ flex-direction: row;
+    justify-content: center;
+}
+
+
+    
